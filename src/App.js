@@ -7,10 +7,8 @@ function App() {
   return (
     <Router>
     <div className="App">
+    <Accept />
       <Switch>
-        <Route exact path='/'>
-          <Accept />
-        </Route>
         <Route exact path='/create'>
           <Display />
         </Route>

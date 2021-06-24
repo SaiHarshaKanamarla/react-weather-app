@@ -1,6 +1,11 @@
-const Display = () => {
-    return ( <div>
-            <h1>Weather Information</h1>
+import { useEffect, useState } from "react";
+
+const Display = ({data}) => {
+
+    
+    console.log(data);
+    return ( <div>      
+            <h1></h1>
         </div> );
 }
  
