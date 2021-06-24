@@ -9,7 +9,7 @@ const Accept = () => {
 
     const [weather,setWeather] = useState('');
 
-    const url = "http://api.openweathermap.org/data/2.5/weather?q="+location+"&appid=a828f2a611c61c94f0f7c0cc7de257fa"; 
+    const url = "http://api.openweathermap.org/data/2.5/weather?q="+location+"&appid=a828f2a611c61c94f0f7c0cc7de257fa&units=metric"; 
     console.log(url);
 
     function locationset(e){
@@ -42,7 +42,7 @@ const Accept = () => {
               <button className="getw" onClick={locationset}>Get Weather</button>           
             </form>
             </div>
-            {<Display data={weather}/>}
+            {weather && <Display data={weather}/>}
         </div> );
 }
  
