@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useHistory } from "react-router-dom";
 import Display from './Display';
+import React, { Component }  from 'react';
 
 const Accept = () => {
     const [city,setCity] = useState('');

@@ -2,6 +2,7 @@ import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Accept from './Accept';
 import Display from './Display';
+import React, { Component }  from 'react';
 
 function App() {
   return (
